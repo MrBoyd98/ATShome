@@ -1,0 +1,432 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+}
+/* Color Scheme will be Navy, White and Orange */
+a, ul{
+    text-decoration: none;
+    list-style-type:none ;
+
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap:2px;
+    row-gap:5px;
+}
+
+#gridbox{
+   
+}
+body{
+    font-family: Helvetica, sans-serif
+}
+/*------------------------------*/
+/* Header and Footer Template */
+.header_container{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column-start: 1;
+    grid-column-end:4;
+    height: 80px;
+    padding:5px;
+    background-color: rgb(25, 50, 92);
+}
+.logo{
+    height: 60px;
+    width:150px;
+    border:1px dashed red;
+    background-color: crimson;
+    margin-right: auto;
+}
+
+
+.menu_box{
+    display: flex;
+    height: fit-content;
+    width:auto;
+    justify-content: center;
+    text-align: left;
+    margin-right: auto;
+    
+ 
+}
+.menu_box ul{
+   display: flex;
+   text-align: center;    
+   color: white;   
+ 
+}
+.menuitems{
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+.login_buttons{
+    display: inline-flex;
+    height:fit-content ;
+
+}
+/*--------------------*/
+/* Button Style*/
+
+#button1, #button2{
+    width: 80px;
+    height: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#button1{
+    background-color: rgb(95, 177, 253);
+}
+#button2{
+background-color: rgb(227, 227, 227);
+}
+/* Footer Container */
+.footer_container{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end:4;
+    height: 150px;
+    background-color: rgb(25, 50, 92);
+    justify-content: center;
+}
+
+.list_header{
+    margin: 5px 0px;
+}
+.footer_links{
+    width: 33%;
+    color: rgb(255, 255, 255);
+    justify-content: ;
+    text-align: left;
+}
+
+
+.footitems_l{
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+
+.footer_links a{
+    width: 33%;
+    color: rgb(211, 211, 211);
+} 
+
+.footer_links a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.footer_contact{
+    color: rgb(255, 255, 255);
+}
+.footitems_c{
+    font-size: 14px;
+    margin:5px 0px;
+
+}
+.footer_credit{
+    position: relative;
+    top: 130px;
+    display:flex;
+    opacity: 60%;
+    width: 33%;
+    color: rgb(211, 211, 211);
+    justify-content: flex-end;
+    font-size: 15px;
+    height: fit-content;
+}
+/*----------------------*/
+/* Button and link animations */
+.login_buttons, .menu_box{
+    position: relative;
+    top:20px
+}
+
+.menuitems a{
+    color: rgb(221, 221, 221);
+}
+
+.menuitems a:hover{
+    transition: all .15s;
+    color: white ;
+    border-bottom: 3px solid rgb(188, 223, 255);
+}
+.menuitems a:active{
+    color: rgb(233, 244, 255);
+}
+
+.login_buttons a{
+    color: black;
+}
+
+#button1:hover { 
+    transition:all .15s;
+    background-color: rgb(188, 223, 255);
+}
+#button1:active { 
+    transition:all .15s;
+    border-radius: 5px;
+}
+#button2:hover { 
+    transition:all .15s;
+    background-color: rgb(255, 255, 255);
+}
+#button2:active { 
+    transition:all .15s;
+    border-radius: 5px;
+}
+
+
+
+
+/*------------------------*/
+/*------------------------------*/
+/* Home Page Fields*/
+
+.solutions_container{
+    grid-column-start: 1;
+    grid-column-end:4;
+    height:auto;
+    justify-content: center;
+}
+.homeintro{
+    display: flex;
+    width: 100%;
+    height:343px;
+    background-image:url(images/techintro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: right;
+    
+    
+}
+
+.intro{ 
+    color: rgb(227, 227, 227);
+    position: relative;
+    top:100px;
+    text-align:center;
+    font-size: 30px;
+    line-height: 50px;
+    display:flex;
+    width: 500px ;
+    height: 200px;
+}
+
+.mission_statement{
+width: 100%;
+height: 80px;
+text-align: center;
+
+}
+.mtext{
+    font-size: 30px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top:20px;
+    text-decoration: underline;
+}
+/* Card Section*/
+/*-------------------------------*/
+
+.card_section{
+display: flex;
+
+}
+.solution_cards{
+display: flex;
+height: 450px;
+width:100%;
+min-width: 313px;
+justify-content: center;
+}
+
+#solcard1, #solcard2, #solcard3{
+    display: flexbox;
+    text-align: center;
+    height:420px;
+    width:80%;
+    justify-content: center;
+    margin: 5px;
+    background-color: rgb(31, 56, 98);
+    border-radius: 4px;
+
+}
+.cardheader{
+    width: 317px;
+    color: rgb(25, 50, 92);
+    background-color: rgb(188, 223, 255);
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+.cardimage img{
+    width:300px;
+    margin:2px;
+}
+
+.cardinfo_box{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+}
+.cardlist{
+    padding: 0px;
+    width: 90%;
+    display: flexbox;
+    margin: 5px;
+    background-color: rgb(188, 223, 255);
+    border-radius: 5px;
+}
+.cardlist li {
+    margin: 15px;
+    margin-bottom: 3px;
+    border-bottom:  1px solid rgb(25, 50, 92);
+}
+
+.ticketinfo{
+    justify-content: center;
+    display:flex;
+    margin:5px ;
+}
+
+.crdinfotxt{
+    background-color: rgb(95, 177, 253);
+    height: 20px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.crdinfotxt a{
+    color: black;
+
+}
+
+.crdinfotxt:hover { 
+    transition:all .15s;
+    background-color: rgb(188, 223, 255);
+}
+.crdinfotxt:active { 
+    transition:all .15s;
+    border-radius: 5px;
+}
+/*-------------------------------*/
+.contact_container{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end:4;
+    height: 420px;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(25, 50, 92);
+}
+form{
+    margin-left: 10px;
+    width: 700px;
+}
+.input_group{
+    margin: 10px;
+    position: relative;
+}
+input, textarea{
+    width:70%;
+    padding:5px;
+    outline:0;
+    border: 3px solid rgb(188, 223, 255);;
+    font-size: 15px;
+    resize: none;
+
+    
+}
+label{
+    color: white;
+}
+.contact_info{
+    position: relative;
+    bottom:80px;
+    display:block;
+    height: 200px;
+    width: 50%;
+    margin: 10px;
+    background-color: rgb(95, 177, 253);
+    border-radius: 8px;
+    border: 2px solid rgb(188, 223, 255);
+}
+
+.contact_info ul{
+    color: white;
+    list-style: none;
+    list-style-position: ;
+    display: flex;
+    flex-direction:column;
+    height: 300px;
+}
+
+.infoitem{
+margin: 15px 10px;
+}
+.contact_button{
+    width:100%;
+    background-color: rgb(188, 223, 255);
+    border:2px solid rgb(233, 244, 255);
+    border-radius: 15px;
+}
+
+.contact_button:hover{
+    background-color: rgb(95, 177, 253);
+    transition: all .15s;
+}
+
+.faq_container{
+    grid-column-start: 1;
+    grid-column-end:4;
+    height: 300px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-track-color: aquamarine;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+::webkit
+.faq_box{
+    display:flex;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(188, 223, 255);
+}
+.faqs_header{
+    display: flex;
+    width: 15%;
+    margin: 10px 30px;
+    background-color: rgb(25, 50, 92);
+}
+.FAQs{
+    margin: 5px;
+    color: rgb(188, 223, 255);
+}
+.faq_list{
+    margin-right:100px;
+}
+
+.question{
+margin:4px;
+}
+.answer{
+margin-bottom: 25px;
+border-bottom: 2px solid rgb(25, 50, 92);
+}
